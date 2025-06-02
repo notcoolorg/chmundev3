@@ -1,6 +1,5 @@
-import Navbar from "@/components/Navbar";
 import { Button } from "../components/ui/button";
-
+import { Link } from "react-router-dom";
 function Committees() {
   const committees = [
     {
@@ -9,42 +8,47 @@ function Committees() {
       agenda:
         "Deliberation on UCC with special emphasis on the recent WAQF bill",
       bgImage: "/aippm.avif",
+      path: "/committees/aippm",
     },
     {
       abbr: "UNSC",
       fullForm: "United Nations Security Council",
       agenda: "Addressing Global Security Threats",
       bgImage: "/unsc.avif",
+      path: "/committees/unsc",
     },
     {
       abbr: "DISEC",
       fullForm: "Disarmament and International Security Committee",
       agenda: "Nuclear Disarmament Strategies",
       bgImage: "disec.jpg",
+      path: "/committees/disec",
     },
     {
       abbr: "UNODC",
       fullForm: "United Nations Office on Drugs and Crime",
       agenda: "Combating Transnational Organized Crime",
       bgImage: "unodc.jpeg",
+      path: "/committees/unodc",
     },
     {
       abbr: "CCC",
       fullForm: "Crisis Committee Council",
       agenda: "Managing Global Crises",
       bgImage: "ccc.jpeg",
+      path: "/committees/ccc",
     },
     {
       abbr: "UNHRC",
       fullForm: "United Nations Human Rights Council",
       agenda: "Promoting Global Human Rights",
       bgImage: "unhrc.jpeg",
+      path: "/committees/unhrc",
     },
   ];
 
   return (
-    <div className="bg-black text-white pt-20">
-      <Navbar />
+    <div className="mt-[-1.5rem] bg-black text-white pt-20">
       {committees.map((committee, index) => (
         <section
           key={committee.abbr}
@@ -67,9 +71,17 @@ function Committees() {
             <p className="text-2xl md:text-2xl text-gray-200 mt-12">
               Agenda: {committee.agenda}
             </p>
-            <Button className="mt-10 bg-white text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
-              Learn More
-            </Button>
+            <Link to={committee.path}>
+    <Button
+      className="hover:cursor-pointer mt-10 bg-white text-black text-lg font-semibold px-8 py-3 rounded-lg relative overflow-hidden group"
+      style={{ transition: "color 300ms ease-in-out" }}
+    >
+      <span className="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out" />
+      <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+        Learn More
+      </span>
+    </Button>
+            </Link>
           </div>
         </section>
       ))}
