@@ -12,6 +12,7 @@ function UNSC() {
       className="min-h-screen bg-black text-white pt-20"
       style={{
         backgroundImage: `url(/unsc.avif)`,
+        backgroundImage: `url('https://via.placeholder.com/1920x1080?text=UNSC+Background')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
@@ -31,7 +32,6 @@ function UNSC() {
           maintaining international peace and security, addressing global
           threats through diplomacy and resolutions.
         </p>
-        <div className="flex flex-col sm:flex-row mb-5 gap-4">
           <a
             href="https://example.com/unsc"
             target="_blank"
