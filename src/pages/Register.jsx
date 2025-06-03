@@ -69,7 +69,6 @@ function Register() {
           </a>
         </section>
 
-
         {/* Last Date of Registration */}
         <p className="text-lg md:text-xl text-gray-300 mb-12">
           Last Date for Registration: August 15, 2025
