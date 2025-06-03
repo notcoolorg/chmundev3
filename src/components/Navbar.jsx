@@ -14,12 +14,18 @@ function Navbar() {
   const handleAboutClick = () => {
     if (location.pathname !== "/") {
       navigate("/");
-      setTimeout(() => {
+      let attempts = 0;
+      const maxAttempts = 10;
+      const interval = setInterval(() => {
         const aboutSection = document.getElementById("about");
-        if (aboutSection) {
-          aboutSection.scrollIntoView({ behavior: "smooth" });
+        if (aboutSection || attempts >= maxAttempts) {
+          if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: "smooth" });
+          }
+          clearInterval(interval);
         }
-      }, 100);
+        attempts++;
+      }, 100); // Check every 100ms, up to 1 second
     } else {
       const aboutSection = document.getElementById("about");
       if (aboutSection) {
@@ -38,7 +44,7 @@ function Navbar() {
           </Link>
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-8">
-            {["Home", "About", "Committees", "Register"].map((item) =>
+            {["Home", "About", "Committees", "Resources", "Register"].map((item) =>
               item === "About" ? (
                 <button
                   key={item}
@@ -76,7 +82,7 @@ function Navbar() {
         {isOpen && (
           <div className="md:hidden bg-black/90 border-t border-gray-800">
             <div className="flex flex-col items-center space-y-4 py-4">
-              {["Home", "About", "Committees", "Register"].map((item) =>
+              {["Home", "About", "Committees", "Resources", "Register"].map((item) =>
                 item === "About" ? (
                   <button
                     key={item}
