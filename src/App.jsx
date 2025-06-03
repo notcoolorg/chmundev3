@@ -3,8 +3,13 @@ import { Button } from "./components/ui/button";
 import { ArrowDown } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import chmunLogo from "/chmunlogo.png";
+import { useLocation } from 'react-router-dom';
 
 function App() {
+    const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   const aboutRef = useRef(null);
   const secGenRef = useRef(null);
   const principalRef = useRef(null);
