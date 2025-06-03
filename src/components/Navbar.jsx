@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
-
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
@@ -34,7 +33,9 @@ function Navbar() {
     <nav className="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50 border-b border-gray-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14">
-          <div  className="text-2xl font-bold">CHMUN</div>
+          <Link to={"/"}>
+            <div className="text-2xl font-bold">CHMUN</div>
+          </Link>
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-8">
             {["Home", "About", "Committees", "Register"].map((item) =>

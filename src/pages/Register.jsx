@@ -1,7 +1,14 @@
 import { Button } from "../components/ui/button";
 import { ExternalLink } from "lucide-react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function Register() {
+      const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div className="min-h-screen bg-black text-white pt-20 flex flex-col items-center">
       {/* Top Section with Logo Background */}
@@ -36,7 +43,7 @@ function Register() {
             rel="noopener noreferrer"
             className="flex justify-center"
           >
-            <Button className="hover:cursor-pointer bg-white text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
+            <Button className="bg-white text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
               Register Now <ExternalLink className="w-5 h-5 ml-2" />
             </Button>
           </a>
@@ -56,7 +63,7 @@ function Register() {
             rel="noopener noreferrer"
             className="flex justify-center"
           >
-            <Button className="hover:cursor-pointer bg-white text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
+            <Button className="bg-white text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
               Register Now <ExternalLink className="w-5 h-5 ml-2" />
             </Button>
           </a>
@@ -69,7 +76,7 @@ function Register() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="hover:cursor-pointer bg-white text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
+            <Button className="bg-white text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
               Matrix
             </Button>
           </a>
@@ -78,7 +85,7 @@ function Register() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="hover:cursor-pointer bg-white text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
+            <Button className="bg-white text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
               Delegate Handbook
             </Button>
           </a>
@@ -87,7 +94,7 @@ function Register() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="hover:cursor-pointer bg-white text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
+            <Button className="bg-white text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
               Code of Conduct
             </Button>
           </a>
