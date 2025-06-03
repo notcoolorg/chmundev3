@@ -43,7 +43,11 @@ function Register() {
             rel="noopener noreferrer"
             className="flex justify-center"
           >
+<<<<<<< HEAD
             <Button className="bg-white text-black hover:cursor-pointer hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
+=======
+            <Button className="bg-white hover:cursor-pointer text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
+>>>>>>> 421de45c01b369e0fb74e9585d2d5fe5b826b566
               Register Now <ExternalLink className="w-5 h-5 ml-2" />
             </Button>
           </a>
@@ -63,12 +67,49 @@ function Register() {
             rel="noopener noreferrer"
             className="flex justify-center"
           >
+<<<<<<< HEAD
             <Button className="bg-white text-black hover:cursor-pointer hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
+=======
+            <Button className="bg-white hover:cursor-pointer text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
+>>>>>>> 421de45c01b369e0fb74e9585d2d5fe5b826b566
               Register Now <ExternalLink className="w-5 h-5 ml-2" />
             </Button>
           </a>
         </section>
 
+<<<<<<< HEAD
+=======
+        {/* Buttons for Resources */}
+        <div className="flex flex-col sm:flex-row gap-4 mb-12">
+          <a
+            href="https://example.com/matrix"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="bg-white hover:cursor-pointer text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
+              Matrix
+            </Button>
+          </a>
+          <a
+            href="https://example.com/delegate-handbook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="bg-white hover:cursor-pointer text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
+              Delegate Handbook
+            </Button>
+          </a>
+          <a
+            href="https://example.com/code-of-conduct"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="bg-white hover:cursor-pointer text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
+              Code of Conduct
+            </Button>
+          </a>
+        </div>
+>>>>>>> 421de45c01b369e0fb74e9585d2d5fe5b826b566
 
         {/* Last Date of Registration */}
         <p className="text-lg md:text-xl text-gray-300 mb-12">
