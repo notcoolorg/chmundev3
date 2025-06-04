@@ -60,7 +60,7 @@ function App() {
 />
   {/* Bouncing Text */}
   <div className="text-7xl md:text-9xl lg:text-[230px] font-extrabold tracking-tight whitespace-nowrap">
-    {"CHMUN'25".split("").map((char, index) => (
+    {"CHMUN25".split("").map((char, index) => (
       <span
         key={index}
         className="bounce-letter inline-block animate-bounce-once"
