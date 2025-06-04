@@ -53,12 +53,11 @@ function App() {
       {/* Hero Section */}
 <section className="min-h-screen flex flex-col items-center justify-center pt-7 px-4">
   {/* Logo */}
-  <img
-    src={chmunLogo}
-    alt="CHMUN Logo"
-    className="w-64 h-64 md:w-52 md:h-52 mt-7 mb-[-.3rem]"
-  />
-
+<img
+  src={chmunLogo}
+  alt="CHMUN Logo"
+  className="w-64 h-64 md:w-52 md:h-52 mt-3 md:mt-7 mb-[-0.3rem] mx-auto block"
+/>
   {/* Bouncing Text */}
   <div className="text-7xl md:text-9xl lg:text-[230px] font-extrabold tracking-tight whitespace-nowrap">
     {"CHMUN'25".split("").map((char, index) => (
@@ -73,9 +72,9 @@ function App() {
   </div>
 
         {/* Date */}
-        <p className="mt-6 text-xl md:text-2xl text-gray-300">
-          Mark your calendars - 23 and 24 August
-        </p>
+<p className="mt-6 text-xl md:text-2xl text-gray-300 whitespace-nowrap text-center">
+    Mark your calendars - 23 and 24 August
+  </p>
 
         {/* Arrow Button */}
         <Button
