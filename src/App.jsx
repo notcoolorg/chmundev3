@@ -3,13 +3,8 @@ import { Button } from "./components/ui/button";
 import { ArrowDown } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import chmunLogo from "/chmunlogo.png";
-import { useLocation } from 'react-router-dom';
 
 function App() {
-    const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
   const aboutRef = useRef(null);
   const secGenRef = useRef(null);
   const principalRef = useRef(null);
@@ -56,22 +51,26 @@ function App() {
       {/* Navbar */}
 
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col items-center justify-center pt-7">
-        {/* Logo */}
-        <img src={chmunLogo} alt="CHMUN Logo" className="w-52 h-52 mt-7 mb-[-.6rem]" />
+<section className="min-h-screen flex flex-col items-center justify-center pt-7 px-4">
+  {/* Logo */}
+  <img
+    src={chmunLogo}
+    alt="CHMUN Logo"
+    className="w-64 h-64 md:w-52 md:h-52 mt-7 mb-[-.3rem]"
+  />
 
-        {/* Bouncing Text */}
-        <div className="text-9xl md:text-[230px] font-extrabold tracking-tight">
-          {"CHMUN'25".split("").map((char, index) => (
-            <span
-              key={index}
-              className="bounce-letter inline-block animate-bounce-once"
-              style={{ animationDuration: "0.8s" }}
-            >
-              {char}
-            </span>
-          ))}
-        </div>
+  {/* Bouncing Text */}
+  <div className="text-7xl md:text-9xl lg:text-[230px] font-extrabold tracking-tight whitespace-nowrap">
+    {"CHMUN'25".split("").map((char, index) => (
+      <span
+        key={index}
+        className="bounce-letter inline-block animate-bounce-once"
+        style={{ animationDuration: "0.8s" }}
+      >
+        {char}
+      </span>
+    ))}
+  </div>
 
         {/* Date */}
         <p className="mt-6 text-xl md:text-2xl text-gray-300">
@@ -108,7 +107,7 @@ function App() {
           >
             About CHMUN
             <motion.span
-              className="absolute bottom-[-0.5rem] left-0 w-20 h-1 bg-[#FFDF00]"
+              className="absolute bottom-[-0.8rem] left-0 w-20 h-1 bg-[#FFDF00]"
               initial={{ x: -100, opacity: 0 }}
               animate={
                 isAboutInView
@@ -153,7 +152,7 @@ function App() {
           >
             Letter from the Chairman
             <motion.span
-              className="absolute bottom-[-0.5rem] left-0 w-20 h-1 bg-[#FFDF00]"
+              className="absolute bottom-[-0.8rem] left-0 w-20 h-1 bg-[#FFDF00]"
               initial={{ x: -100, opacity: 0 }}
               animate={
                 isChairmanInView
@@ -216,7 +215,7 @@ function App() {
           >
             Letter from the Principal
             <motion.span
-              className="absolute bottom-[-0.5rem] left-0 w-20 h-1 bg-[#FFDF00]"
+              className="absolute bottom-[-0.8rem] left-0 w-20 h-1 bg-[#FFDF00]"
               initial={{ x: -100, opacity: 0 }}
               animate={
                 isPrincipalInView
@@ -279,7 +278,7 @@ function App() {
           >
             Letter from the Secretary General
             <motion.span
-              className="absolute bottom-[-0.5rem] left-0 w-20 h-1 bg-[#FFDF00]"
+              className="absolute bottom-[-0.8rem] left-0 w-20 h-1 bg-[#FFDF00]"
               initial={{ x: -100, opacity: 0 }}
               animate={
                 isSecGenInView
