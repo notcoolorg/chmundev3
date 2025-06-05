@@ -37,8 +37,14 @@ function UNSC() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="bg-white text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
-              Matrix
+          <Button
+              className="hover:cursor-pointer mt-10 bg-white text-black text-lg font-semibold px-8 py-3 rounded-lg relative overflow-hidden group"
+              style={{ transition: "color 300ms ease-in-out" }}
+            >
+              <span className="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out" />
+              <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                Matrix
+              </span>
             </Button>
           </a>
           <a
@@ -46,8 +52,14 @@ function UNSC() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="bg-white text-black hover:bg-gray-200 text-lg font-semibold px-8 py-3 rounded-lg">
-              Background Guide
+            <Button
+              className="hover:cursor-pointer mt-10 bg-white text-black text-lg font-semibold px-8 py-3 rounded-lg relative overflow-hidden group"
+              style={{ transition: "color 300ms ease-in-out" }}
+            >
+              <span className="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out" />
+              <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                Background Guide
+              </span>{" "}
             </Button>
           </a>
         </div>
