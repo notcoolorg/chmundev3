@@ -19,7 +19,7 @@ function UNHRC() {
         backgroundBlendMode: "overlay",
       }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+      <div className="max-w-100% mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-left">
       <h1 className="text-6xl md:text-9xl font-black tracking-tight text-center mt-8 md:mt-16 mb-8 break-words">
   United Nations<br className="inline md:hidden" /> Human Rights Council
       </h1>
