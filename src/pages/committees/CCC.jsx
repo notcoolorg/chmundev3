@@ -20,7 +20,7 @@ function CCC() {
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-        <h1 className="text-6xl md:text-9xl font-black tracking-tight text-center mt-16 mb-8">
+        <h1 className="text-6xl md:text-9xl font-black tracking-tight text-center mt-8 md:mt-16 mb-8">
           Continuous Crisis Committee
         </h1>
         <p className="text-2xl md:text-3xl text-gray-200 text-center mb-12">
@@ -33,7 +33,7 @@ function CCC() {
           representing diverse political ideologies to address critical issues
           facing the nation.
         </p>
-        <div className="flex flex-col sm:flex-row mb-5 gap-4">
+        <div className="flex flex-row sm:flex-row mb-5 gap-4">
           <a
             href="https://example.com/aippm"
             target="_blank"
