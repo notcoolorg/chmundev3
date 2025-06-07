@@ -20,9 +20,11 @@ function UNODC() {
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-        <h1 className="text-6xl md:text-9xl font-black tracking-tight text-center mt-16 mb-8">
-          United Nations Office on Drugs and Crime
-        </h1>
+<h1 className="text-6xl md:text-9xl font-black tracking-tight text-center mt-8 md:mt-16 mb-8">
+  <span className="block">United Nations</span>
+  <span className="block">Office on</span>
+  <span className="block">Drugs and Crime</span>
+</h1>
         <p className="text-2xl md:text-3xl text-gray-200 text-center mb-12">
           <strong>Agenda:</strong> Discussing National Policy Reforms
         </p>
@@ -33,7 +35,7 @@ function UNODC() {
           representing diverse political ideologies to address critical issues
           facing the nation.
         </p>
-        <div className="flex flex-col sm:flex-row mb-5 gap-4">
+        <div className="flex flex-row sm:flex-row mb-5 gap-4">
           <a
             href="https://example.com/UNODC"
             target="_blank"
