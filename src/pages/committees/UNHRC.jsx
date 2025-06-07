@@ -21,7 +21,7 @@ function UNHRC() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
       <h1 className="text-6xl md:text-9xl font-black tracking-tight text-center mt-8 md:mt-16 mb-8 break-words">
-  United Nations<br className="inline md:hidden" /> Human Right Council
+  United Nations<br className="inline md:hidden" /> Human Rights Council
       </h1>
         <p className="text-2xl md:text-3xl text-gray-200 text-center mb-12">
           <strong>Agenda:</strong> Discussing National Policy Reforms
