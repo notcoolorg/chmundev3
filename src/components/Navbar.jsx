@@ -73,7 +73,7 @@ function Navbar() {
         </div>
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden bg-black/90 border-t border-gray-800">
+          <div className="md:hidden bg-black/90 border-t border-gray-800 transition-all duration-300 ease-in-out transform origin-top scale-y-0 data-[open=true]:scale-y-100" data-open={isOpen}>
             <div className="flex flex-col items-center space-y-4 py-4">
               {["Home", "About", "Committees", "Resources", "Register"].map((item) =>
                 item === "About" ? (
