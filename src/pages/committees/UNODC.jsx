@@ -20,7 +20,7 @@ function UNODC() {
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-<h1 className="text-6xl md:text-9xl font-black tracking-tight text-center mt-8 md:mt-16 mb-8">
+<h1 className="text-5.5xl md:text-9xl font-black tracking-tight text-center mt-8 md:mt-16 mb-8">
   <span className="block">United Nations</span>
   <span className="block">Office on</span>
   <span className="block">Drugs and Crime</span>
