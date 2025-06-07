@@ -34,7 +34,7 @@ function UNHRC() {
           facing the nation.
         </p>
         <div className="flex flex-row sm:flex-row mb-5 gap-4">
-          <a
+         <a
             href="https://example.com/UNHRC"
             target="_blank"
             rel="noopener noreferrer"
