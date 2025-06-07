@@ -74,7 +74,7 @@ function Committees() {
             <h2 className="text-7xl md:text-9xl font-black tracking-tight">
               {committee.abbr}
             </h2>
-            <p className="text-xl md:text-2xl text-gray-300 mt-2">
+            <p className="text-xl md:text-2xl text-gray-300 mt-2 ml-1 md:ml-0">
               {committee.fullForm}
             </p>
             <p className="text-2xl md:text-2xl text-gray-200 mt-12">
