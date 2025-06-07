@@ -5,6 +5,8 @@ import { motion, useInView } from "framer-motion";
 import chmunLogo from "/chmunlogo.png";
 
 function App() {
+        const { pathname } = useLocation();
+
     useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
