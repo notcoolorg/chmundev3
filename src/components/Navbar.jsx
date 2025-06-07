@@ -12,19 +12,19 @@ function Navbar() {
   };
 
   const handleAboutClick = () => {
-    navigate("/");
-    let attempts = 0;
-    const maxAttempts = 10;
-    const interval = setInterval(() => {
-      const aboutSection = document.getElementById("about");
-      if (aboutSection || attempts >= maxAttempts) {
-        if (aboutSection) {
-          aboutSection.scrollIntoView({ behavior: "smooth" });
+      navigate("/");
+      let attempts = 0;
+      const maxAttempts = 10;
+      const interval = setInterval(() => {
+        const aboutSection = document.getElementById("about");
+        if (aboutSection || attempts >= maxAttempts) {
+          if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: "smooth" });
+          }
+          clearInterval(interval);
         }
-        clearInterval(interval);
-      }
-      attempts++;
-    }, 100);
+        attempts++;
+      }, 100); // Check every 100ms, up to 1 second
     setIsOpen(false);
   };
 
@@ -54,7 +54,7 @@ function Navbar() {
                 >
                   {item}
                 </Link>
-              )
+              ),
             )}
           </div>
           {/* Hamburger Button for Mobile */}
@@ -71,18 +71,11 @@ function Navbar() {
             </button>
           </div>
         </div>
-
-        {/* Mobile Menu with Animation */}
-        <div
-          className={`md:hidden bg-black/90 border-t border-gray-800 transform transition-all duration-300 ease-in-out ${
-            isOpen
-              ? "max-h-96 opacity-100 scale-100"
-              : "max-h-0 opacity-0 scale-95 overflow-hidden"
-          }`}
-        >
-          <div className="flex flex-col items-center space-y-4 py-4">
-            {["Home", "About", "Committees", "Resources", "Register"].map(
-              (item) =>
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="md:hidden bg-black/90 border-t border-gray-800">
+            <div className="flex flex-col items-center space-y-4 py-4">
+              {["Home", "About", "Committees", "Resources", "Register"].map((item) =>
                 item === "About" ? (
                   <button
                     key={item}
@@ -100,10 +93,11 @@ function Navbar() {
                   >
                     {item}
                   </Link>
-                )
-            )}
+                ),
+              )}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </nav>
   );
