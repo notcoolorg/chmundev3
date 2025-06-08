@@ -11,7 +11,7 @@ function Register() {
   }, [pathname]);
   return (
     <div className="min-h-screen bg-black text-white pt-20 flex flex-col items-center">
-      {/* Top Section with Logo Background */}
+      {/*Logo Background */}
       <section
         className="w-full flex flex-col items-center bg-contain bg-center bg-no-repeat py-32"
         style={{
@@ -38,7 +38,7 @@ function Register() {
             Fee: ₹1200
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeIcYjMOnZpoPOh6rShryvpPtXJSYAOL9tBaZTL-EIvs3utvw/viewform"
+            href="example.com/form-ind"
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-center"
@@ -58,7 +58,7 @@ function Register() {
             Fee: ₹1200 per Delegate
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeIcYjMOnZpoPOh6rShryvpPtXJSYAOL9tBaZTL-EIvs3utvw/viewform"
+            href="https://example.com/form-del"
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-center"
