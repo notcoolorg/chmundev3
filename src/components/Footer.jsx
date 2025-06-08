@@ -9,11 +9,11 @@ function Footer() {
           <div className="flex flex-col space-y-3">
             <div>
               <h3 className="text-lg font-semibold">Secretary General</h3>
-              <p className="text-gray-300">Priyanshu Biswas: +91 93533 00298</p>
+              <p className="text-gray-300">Priyanshu Biswas: +91 99876 56432</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold">Director General</h3>
-              <p className="text-gray-300">Srihitha Moole: +91 88845 19519</p>
+              <p className="text-gray-300">Srihitha Moole: +91 88765 43894</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold">Email</h3>
