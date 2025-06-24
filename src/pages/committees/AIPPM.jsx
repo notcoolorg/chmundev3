@@ -3,11 +3,12 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 function AIPPM() {
-      const { pathname } = useLocation();
+  const { pathname } = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
   return (
     <div
       className="min-h-screen bg-black text-white pt-20"
@@ -15,11 +16,20 @@ function AIPPM() {
         backgroundImage: `url(/aippm.avif)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed",
+        backgroundAttachment: "fixed", // Default for desktop
         backgroundColor: "rgba(0, 0, 0, 0.7)",
         backgroundBlendMode: "overlay",
       }}
     >
+      <style>
+        {`
+          @media (max-width: 640px) {
+            .min-h-screen {
+              background-attachment: scroll !important;
+            }
+          }
+        `}
+      </style>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
         <h1 className="text-6xl md:text-9xl font-black tracking-tight text-center mt-8 md:mt-16 mb-8">
           All India Political Parties Meet
@@ -62,7 +72,7 @@ function AIPPM() {
               <span className="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out" />
               <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
                 Background Guide
-              </span>{" "}
+              </span>
             </Button>
           </a>
         </div>
